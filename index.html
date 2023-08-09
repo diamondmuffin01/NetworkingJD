@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+    h3 {
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+
+    h4 {
+      padding-left: 10px;
+    }
+
+
+
+
+      li {
+        margin: 30px;
+      }
+
+
+      .re-size{
+        /*
+        if picture doesn't automatically fit use this class
+        */
+
+        width: 100%;
+
+      }
+
+
+      /**
+
+        class 'exmaple'           = make border
+        h1  class'tittles space'  = chapter number
+        h3                        = title
+        h4                        = smaller tittle on the left side
+
+      */
+
+
+
+
+    </style>
+
+    <body>
+
+      <div class="example">
+        <br>
+        <p class="caution"> * Not mobile friendly yet * </p>
+        <br>
+        <br>
+        <h1 class="tittles space">Network Basics</h1>
+        <h3>Network components</h3>
+        <li>
+
+            What comprises our <b>networks</b> :
+
+            <br><br>
+
+            <img src="img/exp1.png" alt="example" class="re-size">
+
+            <br><br>
+
+        </li>
+
+
+        
+      </div>
+      <div class="example">
+
+        <h1 class="tittles space">Network Basics</h1>
+        <h2 class="tittles space">Network Geography</h2>
+        <h3>PAN</h3>
+
+        <li>
+
+          The <b>Personal Area Network</b> (<b>PAN</b>)
+          is the smallest type of wired or wireless
+          network and covers the least amount of area.
+          (ex : usb & bluetooth)
+
+        </li>
+
+        <h3>LAN</h3>
+
+        <li>
+
+          The <b>Local Area Network</b> (<b>LAN</b>)
+          connects components within a limited distance.
+          (generally up to 100 meters or 300 feet)
+          <br><br>
+
+          Your network can be consisting of either wifi
+          or eithernet.
+          If using <mark>ethernet</mark>, you're going to use the
+          <b>IEEE 802.3</b> standard.
+
+          <br><br>
+
+          If using <mark>wifi</mark>, you're going to use the
+          <b>IEEE 802.11</b> standard.
+
+
+        </li>
+
+        <h3>CAN</h3>
+
+        <li>
+
+            The <b>Campus Area Network</b> (<b>CAN</b>) connects
+            <i>LANs</i> that are building-centric across
+            a university, industrial park, or business park.
+            This can cover several miles, and across many different
+            buildings. 
+
+        </li>
+
+      </div>
+
+
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+
+      <div class="example">
+      <h1 class="tittles space">OSI Model</h1>
+
+        
+      <h2 class="tittles space">OSI Model Overview</h2>
+        
+      <h3>Intro</h3>
+
+      <li>
+
+        The <b>Open System Interconnection <i>model</i></b> (<b>OSI</b>) 
+        was developed in 1977 by the <i>International Organization 
+          for Standardization</i>.
+        This orgnization is responsible for creating different standards, 
+        which we refer to to as the <b>ISO</b>. 
+        For example, if you see <i>ISO 7498</i>, that's the standard we
+        use to refer to the OSI model. 
+
+        <br><br>
+
+        Networks are all about communicating data. 
+        Data is going to be called different things as it flows 
+        through our network it goes through different names as it
+        goes through those different layers of the OSI model.
+
+
+        <br><br>
+        <img src="img/exp2.gif" alt="example" class="re-size">
+        <br><br>
+
+        The OSI model starts at the <i>Physical Layer</i> and ends 
+        at the <i>Application Layer</i>.
+        When we talk about <b>data</b> at layers 7, 6, 5 we
+        are talking about <b><i>information</i></b>. 
+        At layer 4 (transport layer) we're going to call data 
+        a <b>segment</b>. 
+        At layer 3 (network layer) we refer to it as a <b>packet</b>.
+        At layer 2 (data link layer) we call it a <b>frame</b>.
+
+        At layer 1 (physical layer) is where you've convererted the 
+        data into 1s & 0s to send it across our medium (wire), we call
+        this <b>bits</b>.
+        
+        
+      </li>
+
+      <h2 class="tittles space">Layer 1 (Physical Layer)</h2>
+
+        <h3>Intro</h3>
+
+
+        <li>
+
+          At the bottom of the <i>OSI Model</i> is we'll 
+          we find our first layer, the <b>physical <i>layer</i></b>.
+          This is where bits are transmitted across the network and 
+          includes all of the physical and elecetrical characteristics of 
+          this network. 
+          This is going to tell us whether we're using an <i>Ethernet network</i>,
+          whether we're using <i>fiber</i> or <i>copper cables</i>, whether we're 
+          using <i>Cat5</i> or <i>Cat6</i>, and even if we're using radio 
+          frequency in the case of <i>Wi-Fi</i>.
+
+        </li>
+
+        <h3>Bits</h3>
+
+
+        <li>
+
+          Regardless of which method we're using to send our data across this 
+          first layer, it's always going to occur as binary 
+          bits. 
+          These are going to be a series of 1s & 0s. 
+          Now, each media has a different way of representing thse bits, 
+          these series of 1s & 0s, because these series of 1s & 0s 
+          are the basic building blocks of all of our data. 
+          Now, when we switch between these two modes,  
+          whether we should read a 1 or a 0 on the network, this is 
+          called <b>transition modulation</b>.
+
+          Data on a computer network is represented as a <b>binary expression</b>.
+          <i>Electrical voltage</i> (on copper wiring) or <i>light</i> 
+          (carried via fiber-optic cabling) can represent these 1s and 0s.
+          The presence or the absence of voltage on a wire can represent a binary 1 or a binary 0, respectively. 
+          The presence or absence of light on a fiber-optic cable can represent a 1 or 0 in binary.
+
+          <br><br>
+          <img src="img/exp3.png" alt="example" class="re-size">
+          <br><br>
+          
+
+        </li>
+
+        <h3>Wiring</h3>
+        
+        <li>
+        
+          As we start understanding that, we then haveto look at the cables
+          themself becuase this is also part of our physical layer. 
+          If we're using someting like a <i>Cat5</i> or a <i>Cat6 cable</i>,
+          we may have a certain connector on the end called an <i>RJ45</i>,
+          which allows us to plug that cable into the back of a computer or 
+          into a switch. 
+          The way that connector is wired is based on a certain standard. 
+          We use two standards inside our network: <i>TIA/EIA-568A</i> and
+          <i>TIA/EIA-568B</i>.
+          Now, we'll talk about these and which way these pins actually 
+          are set up inside, this connector in a future lesson.       
+        </li>
+
+        <h3>Topology</h3>
+
+        <li>
+
+           There's on thing we have to think about at the physical layer,
+           and that's the <b>topology</b> of the network.
+                How are we actually running these cables to physically connect
+                the different decices together?
+
+          <br><br>
+
+          We can look at this from a Layer 1 perspective. 
+          Is it a bus, it it a ring, is it a star? 
+          Is it a hub and spoke?
+          How about a full mesh, a partial mesh, or any other topology
+          that we discussed. 
+          When it comes to figuiring this out, 
+          your're going to look at how they're 
+          physically cabled, and if you drew them out, that will
+          tell you what <i>phyiscal topology</i> you have.
+
+        </li>
+
+        <h3>Synchronizing bits</h3>
+
+        <li>
+
+              For two networked devices to successfully communicate at the 
+              physical layer, they must agree on when 1 bit stops and 
+              another bit starts. Two basic approaches to bit 
+              synchronization include <i>asynchronous</i> & 
+              <i>synchronous</i>.
+
+              <br><br>
+
+              With the <b>asynchronous</b> <i>bit synchronization</i> approach,
+              a sender indicates that it is about to start transmitting by 
+          sending a start bit to the receiver. When the receiver sees 
+          this, it starts its own internal clock to measure the subsequent 
+          bits. After the sender transmits its data, it sends a stop bit to 
+          indicate that it has finished its transmission.
+
+          <br><br>
+
+          With the <b>synchronous</b> <i>bit synchronization</i> approach,
+          it synchronizes the internal  clocks of both the sender and the receiver to
+          ensure that they agree on when bits begin and end. A common
+          approach to make this synchronization happen is to use an external 
+          clock (for example, a clock provided by a service provider), which 
+          is referenced by both the sender and the receiver. 
+          
+          
+        </li>
+
+      <h3>Bandwidth usage</h3>
+
+        <li>
+
+          <b>Speed</b> is measured by the total amount of data you 
+          can download or upload in one second. <b>Bandwidth</b> 
+          is measured by the total amount of data you’re allowed 
+          to download or upload in one second, which depends 
+          on your internet plan and the connection type.
+          <i>Bandwidth</i> is your maximum possible speed.
+
+          <br><br>
+          
+          The two fundamental approaches to <i>bandwidth</i> usage on a network 
+          are <i>broadband</i> and <i>baseband</i>.       
+
+          <br><br>
+          <img src="img/exp8.png" alt="example" class="re-size">
+          <br><br>
+
+          <b>Baseband</b> is a system that uses a single data 
+          channel in which the whole bandwidth of the transmission
+          medium is dedicated to one data channel at a time. 
+          <i>Baseband</i> uses all of the frequency of the cable
+          all of the time. An example of this is a telephone, because
+          picking up the phone uses all of the bandwidth
+          allocated to that phone line. Another example of baseband
+          network is a wired home thernet network.
+
+          <br><br>
+
+          When we use baseband, we're use a reference 
+          clock that allows us to send the information for both
+          the sender and receiver at the certain time. 
+          By using this reference clock, this is an example 
+          of using a <i>synchronous communication</i>. 
+          
+           <br><br>
+          <img src="img/exp9.png" alt="example" class="re-size">
+          <br><br>
+          
+          <b>Broadband</b> is a multiple data channel system in which 
+          the bandwidth of the transmission medium carries several 
+          data streams at the same time. 
+          <i>Broadband</i> is going to divide our bandwidth into 
+          seperate channels. An example of this is a TV service
+          because a single cable is coming into your home, but
+          it carries 200+ channels. 
+
+          <br><br>
+
+          In summary baseband is related to digital signals, while 
+          broadband is related to analog signals. 
+          <i>Baseband</i> system does not allow digital signals to 
+          share one medium simultaneously while <i>broadband</i>
+          
+          system can 
+          transmit different data side by side at the same time. 
+          
+        </li>
+
+
+        <h3>Multiplexing</h3>
+
+        <li>
+
+          Multiplexing is a technique in wihch several signals are 
+          combined into one composite signal so that they can 
+          all be transmitted on a common channel. 
+          In order to transmit various signals in a single 
+          common channel, it is important to keep them seperated as
+          to not cause interference and to make it possible for 
+          the receiving end to seperate them.
+          
+          <br><br>
+
+          Time-division multiplexing (<b>TDM</b>) supports different 
+          communication sessions on the 
+          same physical medium by causing the sessions to take 
+          turns. For a brief period of time, defined as a 
+          <i>time slot</i>, data from the first session will be sent, followed 
+          by data from the second session. This continues until 
+          all sessions have had a turn, and the process repeats 
+          itself.
+          
+          <br><br>
+
+          A downside to <i>TDM</i>is that each communication session 
+          receives its own time slot, even if one of the sessions 
+          does not have any data to transmit at the moment. 
+          To make a more efficient use of available bandwidth, 
+          <b>Statistical time-division multiplexing</b>(<b>StatTDM</b>)
+          dynamically assigns time slots to communications 
+          sessions on an as-needed basis.
+
+          <br><br>
+
+          <b>Frequency-division multiplexing</b> <b>FDM</b> divides a medium’s frequency 
+          range into channels, and 
+          different communication sessions transmit their data 
+          over different channels.
+
+          <br><br>
+
+          Now, for the exam, the good news is you don't need to 
+          memorize <i>TDM</i>, <i>StatTDM</i>, and <i>FDM</i>,
+          but rather you just need to understand that 
+          <i>multiplexing</i> involves taking some limited 
+          amount of resource and using it more efficiently.
+          <i>Multiplexing</i> allows multiple people to 
+          use a baseband connection at the same time
+        
+        </li>
+
+        <h3><i>Physical Layer</i> Device Examples</h3>
+
+        <li>
+
+          The final thing we need to talk about is
+          some examples of Physical/Layer1 devies.
+          The most common one is a <i>cable</i>.
+          If I have a fiber optic cable or an 
+          Ethernet cable or a coaxial cable, 
+          these are all different types of media.
+          So, if I have a fiber optic cable and I 
+          put light in one end, I'm going to get 
+          light out of the other end. That's 
+          a physical response, a physical layer 
+          of the <i>OSI Model</i>.
+
+          <br><br>
+
+          Additionally, beyond wired cables, we also have 
+          wireless things, things like Bluetooth and Wi-Fi 
+          and near field communication.
+          All of these radio frequencies make up 
+          the media at Layer1 for those types of networks.
+
+          <br><br>
+
+          The final example is infrastructure devices, 
+          and that will be things like <i>hubs</i>,
+          <i>access points</i>, and <i>media converters</i>.
+          All of these devices operate at the bit layer. 
+          This is going to be a function to just simply repeat 
+          what they get.
+
+          <br><br>
+
+          Whatever comes in is gonig to go out.
+          There's no logic to it, there's no 
+          intelligence to it.
+          Layer1 devies simply repeat whetever 
+          they're told. 
+          Later1 is dumb devices. 
+          They're simply repeaters. 
+          Whatever they take in, they sind it right 
+          back out. 
+          
+        </li>
+
+        <h2 class="tittles space">Layer 2 (Data-Link Layer)</h2>
+
+        <h3>Intro</h3>
+        
+        <li>
+
+              The <b>Layer 2</b> of the OSI model, the <b>data link <i>layer</i></b>.
+              In the <i>data link layer</i> we're going to package up bits from 
+              <i>Layer 1</i> and put those into <b>frames</b> and then, we're going to 
+              take <i>frames</i> and transmit them throughout the network while 
+              performing some error detection detection, correction,
+             identifying unique network devices using <i>MAC addresses</i>,
+             and we're going to provide some flow control.
+             With <i>Layer 2</i> we deal with things on a <b>logical level</b>. 
+
+        </li>
+
+        <h3>MAC address</h3>
+
+        <li>
+          
+                
+              A <b>MAC address</b> (<b>media access control address</b>) is a means for 
+              identifying a device physically and allowing it to operate on a logical topology.
+              These <i>MAC addresses</i> are important for dealing with switches and other 
+              Layer 2 devices.
+
+              <br><br>
+
+              When it comes to identifying <i>MAC addresses</i>, every manufacturer
+              of a network card assigns a unique <i>48-bit</i> physical adressing
+              system to every network interface card they produce. 
+              A <i>12-digit hexadecimal</i> number is used to represent 
+              <i>MAC addresses</i>. <i>MAC addresses</i> are always 
+              written hexadecimally wherein each of the letter or 
+              numbers is considered <i>four bits</i>.
+
+              <br><br>
+              <img src="img/exp11.png" alt="example" class="re-size">
+              <br><br>
+              
+              The first <i>24 bits</i> or <i>six letters/numbers</i> as 
+              you can see here identifies the particular vendor who made that card. 
+              The second half is going to represent the exact machine it 
+              belongs to.
+
+              <br><br>
+              <img src="img/exp12.png" alt="example" class="re-size">
+              <br><br>
+          
+        </li>
+
+        <h3>LLC Layer</h3>
+
+        <li>
+
+              The data link layer is the second lowest layer. 
+              It is divided into two sublayers. The <b>logical link
+              control</b> (<b>LLC</b>) <b><i>sublayer</i></b>, and <i>(MAC) 
+              sublayer</i>. 
+
+              <br><br>
+          
+              <b>Logical Link Control</b> (<b>LLC</b>) provides 
+              connection services and allow your recipients to 
+              acknowledge the messages have gotten where you 
+              thought thought they were going. 
+          
+              <i>LLC</i> is the most basic form of <i>flow control</i>, essentially it's 
+              going to limit the amount of data that a sender can send at once 
+              and allow the receiver to keep from
+              being overwhelmed.
+
+
+              <br><br>
+          
+              <i>LLC</i> also provices basic <i>error control</i> functions
+              such as allowing the receiver to inform the sender if their data
+              fram wasn't received, or if it was received <i>corrupted</i> and
+              it does this by using a <b>checksum</b>.
+
+              Since everything it receives is just a series of 1s &
+              0s, the receiver is going to add all of these up and 
+              the last bit will either be even or odd. 
+              If it matches, they add them all up and if they're 
+              <i>even</i>, then, it's going to assume that this was good.
+              If you have received a <i>zero</i> that means it was <i>even</i>. 
+              
+              If the last bit was <i>odd</i>i>, meaning it was a <i>one</i>,
+              and they added up all the numbers
+              and they got an odd number,
+              that means it was good, as well.
+              But if not, they can figure that something was bad
+              and then ask for a retransmission of the <i>frame</i>.
+            
+              <br><br>
+          
+              ??? The primary function of LLC is to multiplex protocols over the MAC layer while transmitting and likewise to de-multiplex the protocols while receiving.
+              LLC provides hop-to-hop flow and error control.
+              It allows multipoint communication over computer network.
+              Frame Sequence Numbers are assigned by LLC.
+              In case of acknowledged services, it tracks acknowledgements
+                
+        </li>
+
+          <h3>How is communication <i>synchronized</i>?</h3>
+
+          <li>
+
+                Communication can be synchronized across Layer 2
+                according to three different schemes.
+
+                <br><br>
+
+                First we have something known as <b>isochronous <i>mode</i></b>
+                which happens when the networks use a common reference clock similar to 
+                <i>synchronous</i>, yet they also crate time slots for
+                transmissions, much like we did with time division multiplexing. 
+                This has less overhead than either of the other two modes because 
+                both devices know when they can communicate and for exactly how long.
+
+                <br><br>
+
+                The second method we can use is known as <b>synchronous <i>method</i></b> and
+                this is much like <i>Layer 1</i>. 
+                It's going to involve devices using the same clock.
+                But the reason it's different from isochronous is that this is
+                going to allow us to have beginning and ending <i>frames</i> and  
+                and special control characters to tell us when we're going to 
+                start and when we're going to end based on those beats. 
+                Networks operate in that devices can only communicate at 
+                frequencies specified by particular clock cycles. 
+                Because of this, there isn't a lof of gap time that 
+                isn't already properly utilized and this becomes a major 
+                drawback for sychronized mode.
+
+                <br><br>
+
+                Finally we have <b>asynchronous</b> which is going to 
+                allow each of our network decives to reference their 
+                own clock cycles and use their own <i>clock cycles</i> and 
+                their own start and stop <i>bits</i>.
+                In this way, there's no real control over when the 
+                devices are allowed to communicate, and that becomes 
+                the major drawback here. 
+
+                
+                
+            
+          </li>
+
+          <h3>Ending?</h3>
+
+          <li>
+
+                  Now, when we look at <i>Layer 2 devices</i>, we
+                  have things like <b>network interface cards</b>, 
+                  <b>bridges</b>, and <b>switches</b>.
+                  In contrast to how a hub is a dumb machine
+                  that simply relies on a message coming in and repeating 
+                  it back out, <i>switches</i> are smarter. 
+
+                  They can actually use logic to learn which physical 
+                  ports are attached to which devices based on their 
+                  <i>MAC addresses</i>.
+                  This way they can send data to specific devices in
+                  the network, allowing us to picm up and choose 
+                  different lines of communication to go to different 
+                  areas. 
+
+                <br><br>
+
+                  ?! Now, we'll talk all about how this works and how 
+                     these switches do these including things like 
+                    <i>CAM tables</i> using the <i>MAC addresses</i> and 
+                    how they're doing the switching across the network in 
+                    later lessons and we'll go into depth in that
+                    because you will need to understand that
+                    to understand how networks really work. 
+                    But for right now,
+                    just remember that switches, bridges, and MAC addresses
+                    are three great examples of things that operate at Layer 2,
+                    the data link layer.
+                  
+            
+          </li>
+
+          <h2 class="tittles space">Layer 3 (Network Layer)</h2>
+
+          <h3>Intro</h3>
+
+          <li>
+
+                  At the <b>network layer</b>, we're concerned with
+                  routing. <b>Layer 3</b> is all about how we're 
+                  going to foward traffic, which we refer to 
+                  as <i>routing uisng logical addresses</i>. 
+
+                  <br><br>
+
+                  For example, your computer has an <i>IP address</i>.
+                  And that <i>IP adress</i> is either going to be an 
+                  <b>IP version 4</b> (<b>IPv4</b>) or an <b>IP version 6 adress</b> (<b>IPv6</b>), or 
+                  both. Both of these are considered <i>Layer 3 protocols</i>
+                  <i>IPv4</i>, and <i>IPv6</i> are the most common and popular 
+                  <i>logical addressing scheme</i> 
+            
+                 <br><br>
+
+                  We're also going to be concerned with what's known as 
+                  <b>switching</b>, also known as <b>routing</b>.
+                  Not to be confused with <i>switches</i> which are 
+                  layer 2 devices. 
+
+                  <br><br>
+                  Upcoming concepts : 
+                  <br>
+                  <img src="img/exp13.png" alt="example" class="re-size">
+                  <br><br>
+                
+          </li>
+
+          <h3>IP address</h3>
+
+          <li>
+                  Back in the '80s and '90s, there 
+                  was <i>AppleTalk</i> for
+                  Apple computers. 
+                  And if you used a Windows or a Novell Network 
+                  computer, you might have used <i>IPX</i>, which 
+                  was the Internetwork Packet Exchange.   
+                  What killed both these off 
+                  was <b>Internet Protocol</b> (<b>IP</b>)
+                  There are other protocols that you could use
+                  in <i>Layer 3</i>, <i>IP</i> is just the most
+                  common. 
+
+                  <br><br>
+
+                  Now, some of those are still existing on some
+                  <i>legacy systems</i>, which means old systems 
+                  in some corporate network. 
+                  The routing protocol of the internet that 
+                  we use today is known as <i>IP</i>. 
+                  Recall <i>IP</i> comes in two 
+                  variants, <i>IPv4</i> and <i>IPv6</i>.
+
+                  <br><br>
+                  <img src="img/exp14.png" alt="example" class="re-size">
+                  <br><br>
+                  
+                  Above is an example of an <i>IP address</i> 
+                  This is called a <b>dotted-octet <i>notation</i></b> which 
+                  is four sets of numbers separated by dots. 
+             
+          </li>
+
+          <h3>How should data be <i>forwarded</i> or <i>routed</i>?</h3>
+
+          <li>
+
+                There are three main ways for data to 
+                be <i>forwarded</i> or <i>routed</i>. 
+                Which are <i>Packet switching</i>, <i>Circuit switching</i>, <i>Message switching</i>.
+
+                <br><br>
+
+                The most commonly used on in a network is going to be
+                routing, which is also known as <b>packet switching</b>.
+                This is where data is divided into <b>packets</b> and then
+                <b>forwarded</b> on based on it's <i>IP address</i>.
+        
+                <i>Packets</i> are going to take different routes, and 
+                we don't care which route it takes, as long as it gets 
+                to its final destination. 
+            
+                <br><br>
+
+                When we talk about <b>circuit switching</b>, though, 
+                this where we want to have the same path each and 
+                every time. 
+                We're going to get a dedicated communications link
+                that's established between our two devices. 
+
+                <br><br>
+
+                Now the third type of switching we have is known as 
+                <b>message switching</b>. This is where all the 
+                data is divided into messages, and they're similar 
+                to <i>packet switching</i> in this idea but the 
+                messages can actually be <i>stores</i> and <i>forwarded</i>.
+                We want to make sure the data is going to get where it's 
+                going, and that's why <i>message switching</i> can be very
+                for us. 
+
+                <br><br>
+
+                Almost all of our networks nowadays and the ones you 
+                utilize are going to be using <i>packet switching</i>.
+            
+                The reason is we have other methods that will check if 
+                something is not getting to the distant end, and will 
+                be resent over another path until it finally gets there. 
+
+                Most of the Internet works by using <i>packet switching</i>.
+            
+          </li>
+
+          <h3>Route discovery and selection</h3>
+
+          <li>
+
+                  Next is <i>route discovery and selection</i>
+                this is how are we going to decide which path 
+                we're going to take to send a <i>message</i>.
+
+                Routers maintain a <i>routing table</i> so, they can
+                understand how to forward a packet based on the 
+                destination IP of where it wants to get to.
+
+                <br><br>
+
+                There are lots of different ways that it can do this,
+                and they can do this either as 
+                a <i>static route</i>, or a <i>dynamically-assigned route</i> using
+                a <i>routing protocol</i> like <i>RIP</i>, <i>OSPF</i>, & <i>EIGRP</i>.
+                <b>Routing protocols</b> help us decide how data is going 
+                to flow across the network, and how the <i>routers</i> are 
+                going to communicate that information. 
+            
+          </li>
+
+          <h3>Connection Services</h3>
+
+          <li>
+
+              <b>Connection services</b> are going to augment 
+              <i>layer 2 connection services</i> and provide 
+              us with some additional reliability.
+              Again, we're going to have 
+              some <b>flow control</b> added here, and this is
+              going to prevent the sender from sending data faster 
+              than the receiver can get it. 
+
+              <br><br>
+
+              We also have <b>packet reordering</b>. This
+              is really important because it allows us to take
+              a big chunk of data, cut it up into little pieces  
+              of <i>packets</i>, and then send all those packets 
+              off in different directions to get to their final 
+              destination. A problem that usually arises is that
+              packets arrive at the destination in the wrong order.
+              <i>Packet reordering</i> allows them to get all this
+              data at the end destination at the receiver.
+              The benefit here is that because of routing, 
+              each packet gets numbered and sequenced, and we
+              can put them back into the right order. 
+            
+          </li>
+
+          <h3>Internet Control Message Protocol (ICMP)</h3>
+
+          <li>
+
+                <b>Internet Control Message Protocol</b> (<b>ICMP</b>) is
+                is used to send messages and operational information to
+                an IP destination. 
+                The most commonly used one is <b>ping</b>. 
+                <i>Ping</i> sends out a packet and tells us if it was
+                received or not by the distant end and how long it 
+                took.
+                This is not a tool used regularly by end-user applications,
+                but it is used by us as adminstrators to help troubleshoot
+                our network.
+
+                <br><br>
+
+                Another variation is known as <b>traceroute</b>, 
+                which will trace thr route that a packet takes 
+                through the network and tells you every single 
+                router along the way as it goes through.
+            
+          </li>
+
+          <h3>Layer 3 devices</h3>
+
+          <li>
+
+                Now lets look at some <i>layer 3 devices</i> that 
+                we need to remember for the exam. 
+                The first two are <i>routers</i>, and
+                <i>multilayer switches</i>. 
+                
+                <br><br>
+
+                A <b>router</b> looks like this icon below, a circle 
+                with four arrows. This is a depiction of what a 
+                router looks like in a <i>logical diagram</i>.
+     
+                <br><br>
+                <img src="img/exp16.png" alt="example" class="re-size">
+                <br><br>
+
+                A <i>multilayer switch</i> works like a <i>switch</i>, 
+                and <i>router</i> combined. It has both features of   
+                a <i>layer 2</i> switch, and a <i>layer 3</i> router. 
+                Remember that a switch is always a <i>layer 2</i> device,
+                unless it's a multilayer switch, which will then be a <i>layer 3</i> device. 
+            
+                <br><br>
+                <img src="img/exp17.png" alt="example" class="re-size">
+                <br><br>
+
+            
+            
+          </li>
+
+          <h2 class="tittles space">Layer 4 (Transport Layer)</h2>
+
+          <h3>Lower/Upper layers</h3>
+        
+          <li>
+
+                At <b>layer 4</b> we have the <b>transport layer</b>.
+                Now, the transport layer is our dividing line between 
+                what we call the <i>upper layers</i> of the OSI model and
+                the <i>lower layers</i> of the OSI model. 
+
+                <br><br>
+            
+                Now the <b>lower layers</b> consist of 
+                <i>physical</i>, <i>data link</i>, & <i>network</i> layers.
+                While the <b>upper layers</b> consist of <i>transport</i>,
+                <i>session</i>, <i>presentation</i>, & <i>application</i> layer.
+                  
+          </li>
+
+          <h3>TCP & UDP protocols</h3>
+
+          <li>
+            
+                 <b>Transmission control protocol</b> (<b>TCP</b>) is a 
+                 <i>connection oriented protocol</i> is a reliable 
+                 way to transport segments across our network. 
+                 Now, if a segment has dropped, the protocol will 
+                 ask for acknowledgment each and every time. 
+                 If it doesn't get that acknowledgement, it's going to 
+                 resend that piece of information. 
+                 For this reason we call is a <i>connection full protocol</i>, because
+                 it has this two-way type of information.
+
+                <br><br>
+                <img src="img/exp18.png" alt="example" class="re-size">
+                <br><br>
+
+                Now, let's look at the diagram above. 
+                Here we have a client on the left, and a
+                server on the right. 
+                The client is going to send what's called
+                a <b>synchronization packet</b> (<b>SYN packet</b>)
+              
+          </li>
+
+          <h3>Three-way handshake</h3>
+
+          <li>
+
+                  
+                  Now this is what refer to as a <b>three-way handshake</b>.
+            
+          </li>
+        
+      </div>
+
+    <div class="example">
+
+       <h1 class="tittles space">TCP/IP Model</h1>
+
+        
+      <h2 class="tittles space">TCP/IP Model</h2>
+        
+      <h3>???</h3>
+      
+
+      <h2 class="tittles space">Data Transfer Over Networks</h2>
+            <h3>???</h3>
+
+      <h2 class="tittles space">Ports and Protocols</h2>
+            <h3>???</h3>
+
+      <h2 class="tittles space">Finding Open Ports</h2>
+            <h3>???</h3>
+
+      <h2 class="tittles space">IP Protocol Types</h2>
+            <h3>???</h3>
+
+
+    </div>
+   
+
+    <div class="example">
+       <h1 class="tittles space">Media and Cabling Distribution</h1>
+       <h2 class="tittles space">Media and Cabling</h2>
+       <h3></h3>
+       <h2 class="tittles space">Copper Media</h2>
+       <h3></h3>
+       <h2 class="tittles space">Building a Cable</h2>
+       <h3></h3>
+       <h2 class="tittles space">Fiber Media</h2>
+       <h3></h3>
+       <h2 class="tittles space">Transceivers</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cable Distribution</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wiring a Network</h2>
+       <h3></h3>
+       <h2 class="tittles space">Testing the Network</h2>
+       <h3></h3>
+    </div>
+      
+    <div class="example">
+       <h1 class="tittles space">Ethernet Fundamentals</h1>
+       <h2 class="tittles space">Ethernet Fundamentals</h2>
+       <h3></h3>
+       <h2 class="tittles space">Network Infrastructure Devices</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with Devices</h2>
+       <h3></h3>
+       <h2 class="tittles space">Additional Ethernet Switch Features</h2>
+       <h3></h3>
+       <h2 class="tittles space">Spanning Tree Protocol</h2>
+       <h3></h3>
+       <h2 class="tittles space">Virtual Local Area Network (VLAN)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Specialized Network Devices</h2>
+       <h3></h3>
+       <h2 class="tittles space">Other Devices</h2>
+       <h3></h3>
+    </div>
+      
+    <div class="example">
+       <h1 class="tittles space">IP Addressing</h1>
+       <h2 class="tittles space">IP Addressing</h2>
+       <h3></h3>
+       <h2 class="tittles space">IPv4 Addressing</h2>
+       <h3></h3>
+       <h2 class="tittles space">IPv4 Data Flows</h2>
+       <h3></h3>
+       <h2 class="tittles space">Assigning IP Addresses</h2>
+       <h3></h3>
+       <h2 class="tittles space">Computer Mathematics</h2>
+       <h3></h3>
+       <h2 class="tittles space">Subnetting</h2>
+       <h3></h3>
+       <h2 class="tittles space">Subnetting Practice</h2>
+       <h3></h3>
+       <h2 class="tittles space">Subnetting by Hand</h2>
+       <h3></h3>
+       <h2 class="tittles space">IPv6 Addressing</h2>
+       <h3></h3>
+       <h2 class="tittles space">IPv6 Data Flows</h2>
+       <h3></h3>
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Routing</h1>
+       <h2 class="tittles space">Routing Fundamentals</h2>
+       <h3></h3>
+       <h2 class="tittles space">Routing Tables</h2>
+       <h3></h3>
+       <h2 class="tittles space">Routing Protocols</h2>
+       <h3></h3>
+       <h2 class="tittles space">Address Translation (NAT and PAT)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Multicast Routing</h2>
+       <h3></h3>
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Network Services</h1>
+       <h2 class="tittles space">Network Services</h2>
+       <h3></h3>
+       <h2 class="tittles space">DHCP</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with DHCP</h2>
+       <h3></h3>
+       <h2 class="tittles space">DNS</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with DNS</h2>
+       <h3></h3>
+       <h2 class="tittles space">NTP</h2>
+       <h3></h3>
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Wide Area Networks (WANs)</h1>
+
+       <h2 class="tittles space">Wide Area Networks (WAN)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wired WAN Connections</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless WAN Connections</h2>
+       <h3></h3>
+       <h2 class="tittles space">WAN Technologies (Part 1)</h2>
+       <h3></h3>
+       <h2 class="tittles space">WAN Technologies (Part 2)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with WANs</h2>
+       <h3></h3>
+       <h2 class="tittles space">Other WAN Connections</h2>
+       <h3></h3>
+      
+    </div>
+
+
+      
+        <div class="example">
+       <h1 class="tittles space">Wireless Networks</h1>
+          
+       <h2 class="tittles space">Wireless Networking (WLAN)</h2>
+       <h3></h3>
+       <h2 class="tittles space">WLAN Service Sets</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless Antennas</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on- with Antennas</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless Frequencies</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless Security</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with Wireless</h2>
+       <h3></h3>
+       <h2 class="tittles space">When Security Fails</h2>
+       <h3></h3>
+          
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Cloud and the Datacenter</h1>
+       <h2 class="tittles space">Cloud and the Datacenter</h2>
+       <h3></h3>
+       <h2 class="tittles space">Virtual Network Devices</h2>
+       <h3></h3>
+       <h2 class="tittles space">Voice Over IP (VoIP)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cloud Computing</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cloud Concepts</h2>
+       <h3></h3>
+       <h2 class="tittles space">Virtualization and Cloud Computing</h2>
+       <h3></h3>
+       <h2 class="tittles space">Infrastructure as Code</h2>
+       <h3></h3>
+       <h2 class="tittles space">Connectivity Options</h2>
+       <h3></h3>
+       <h2 class="tittles space">Datacenter Architecture</h2>
+       <h3></h3>
+       
+      
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Network Security</h1>
+      
+       <h2 class="tittles space">Network Security</h2>
+      <h3></h3>
+      <h2 class="tittles space">The CIA Triad</h2>
+      <h3></h3>
+      <h2 class="tittles space">Threats and Vulnerabilities</h2>
+      <h3></h3>
+      <h2 class="tittles space">Risk Management</h2>
+      <h3></h3>
+      <h2 class="tittles space">Security Principles</h2>
+      <h3></h3>
+      <h2 class="tittles space">Defense in Depth</h2>
+      <h3></h3>
+      <h2 class="tittles space">Multifactor Authentication</h2>
+      <h3></h3>
+      <h2 class="tittles space">Authentication Methods</h2>
+      <h3></h3>
+      <h2 class="tittles space">Network Access Protocols</h2>
+      <h3></h3>
+      <h2 class="tittles space">Network Access Protocols</h2>
+      <h3></h3>
+      <h2 class="tittles space">Network Access Control</h2>
+      <h3></h3>
+      <h2 class="tittles space">Physical Security</h2>
+      <h3></h3>
+      <h2 class="tittles space">Asset Disposal</h2>
+      <h3></h3>
+
+       
+      
+    </div>
+
+
+
+
+
+      
+
+    <div class="example">
+       <h1 class="tittles space">Network Attacks</h1>
+       <h2 class="tittles space">Network Attacks</h2>
+       <h3></h3>
+       <h2 class="tittles space">Denial of Service Attacks</h2>
+       <h3></h3>
+       <h2 class="tittles space">General Network Attacks</h2>
+       <h3></h3>
+       <h2 class="tittles space">Spoofing Attacks</h2>
+       <h3></h3>
+       <h2 class="tittles space">Malware</h2>
+       <h3></h3>
+       <h2 class="tittles space"> </h2>
+       <h3></h3>
+       <h2 class="tittles space"></h2>
+       <h3></h3>
+       <h2 class="tittles space"></h2>
+       <h3></h3>
+    </div>
+
+
+      
+    <div class="example">
+       <h1 class="tittles space">Security Technologies</h1>
+      
+       <h2 class="tittles space">Security Technologies</h2>
+       <h3></h3>
+       <h2 class="tittles space">Firewalls</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with Firewalls</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hands-on with Software Firewalls</h2>
+       <h3></h3>
+       <h2 class="tittles space">IDS and IPS</h2>
+       <h3></h3>
+       <h2 class="tittles space">Remote Access</h2>
+       <h3></h3>
+       <h2 class="tittles space">Virtual Private Networks (VPNs)</h2>
+       <h3></h3>
+       <h2 class="tittles space">IPSec</h2>
+       <h3></h3>
+       <h2 class="tittles space">Simple Network Management Protocol</h2>
+       <h3></h3>
+       <h2 class="tittles space">Network Logging</h2>
+       <h3></h3>
+       <h2 class="tittles space">SIEM</h2>
+       <h3></h3>
+      
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Networking Hardening</h1>
+       
+       <h2 class="tittles space">Network Hardening</h2>
+       <h3></h3>
+       <h2 class="tittles space">Patch Management</h2>
+       <h3></h3>
+       <h2 class="tittles space">Password Security</h2>
+       <h3></h3>
+       <h2 class="tittles space">Unneeded Services</h2>
+       <h3></h3>
+       <h2 class="tittles space">Port Security and VLANs</h2>
+       <h3></h3>
+       <h2 class="tittles space">Inspection and Policing</h2>
+       <h3></h3>
+       <h2 class="tittles space">Securing SNMP</h2>
+       <h3></h3>
+       <h2 class="tittles space">Access Control Lists</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless Secuirty</h2>
+       <h3></h3>
+       <h2 class="tittles space">loT Considerations</h2>
+       <h3></h3>
+    </div>
+
+
+      
+       <div class="example">
+       <h1 class="tittles space">Network Availability</h1>
+       <h2 class="tittles space">Networking Avaliablity</h2>
+       <h3></h3>
+       <h2 class="tittles space">High Availability</h2>
+       <h3></h3>
+       <h2 class="tittles space">Designing Redundant Networks</h2>
+       <h3></h3>
+       <h2 class="tittles space">Recovery Sites</h2>
+       <h3></h3>
+       <h2 class="tittles space">Facilities Support</h2>
+       <h3></h3>
+       <h2 class="tittles space">Quality of Service (QoS)</h2>
+       <h3></h3>
+       <h2 class="tittles space">Qos Categorization</h2>
+       <h3></h3>
+       <h2 class="tittles space">QoS Mechanisms</h2>
+       <h3></h3>
+    </div>
+
+
+
+
+
+
+
+      
+    <div class="example">
+       <h1 class="tittles space">Network Policies</h1>
+       <h2 class="tittles space">Network Policies</h2>
+       <h3></h3>
+       <h2 class="tittles space">Plans and Procedures</h2>
+       <h3></h3>
+       <h2 class="tittles space">Hardening and Security Policies</h2>
+       <h3></h3>
+       <h2 class="tittles space">Common Agreements</h2>
+       <h3></h3>
+
+
+
+
+
+
+      
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Network Management</h1>
+      
+       <h2 class="tittles space">Network Management</h2>
+       <h3></h3>
+       <h2 class="tittles space">Common Documentation</h2>
+       <h3></h3>
+       <h2 class="tittles space">Performance Metrics</h2>
+       <h3></h3>
+       <h2 class="tittles space">Sensors</h2>
+       <h3></h3>
+       <h2 class="tittles space">NetFlow Data</h2>
+       <h3></h3>
+       <h2 class="tittles space">Interface Statistics</h2>
+       <h3></h3>
+       <h2 class="tittles space">Environmental Sensors</h2>
+       <h3></h3>
+      
+    </div>
+
+
+
+
+      
+      
+    <div class="example">
+       <h1 class="tittles space">Troubleshootin Physical Networks</h1>
+
+       <h2 class="tittles space">Network Troubleshooting Methdology</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cable Review</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cabling Tools</h2>
+       <h3></h3>
+       <h2 class="tittles space">Cable Signal Issues</h2>
+       <h3></h3>
+       <h2 class="tittles space">Copper Cable Issues</h2>
+       <h3></h3>
+       <h2 class="tittles space">Fiber Cable Issues</h2>
+       <h3></h3>
+       <h2 class="tittles space">Ethernet Issues</h2>
+       <h3></h3>
+      
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Troubleshooting Wireless Networks</h1>
+       <h2 class="tittles space">Troubleshooting Wireless Networks</h2>
+       <h3></h3>
+       <h2 class="tittles space">Wireless Considerations</h2>
+       <h3></h3>
+       <h2 class="tittles space">Coverage and Interference</h2>
+       <h3></h3>
+       <h2 class="tittles space">Incorrect Configurations</h2>
+       <h3></h3>
+       <h2 class="tittles space">Captive Portal</h2>
+       <h3></h3>
+      
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Network Tools and Commands</h1>
+
+        <h2 class="tittles space">Network Tools and Commands</h2>
+        <h3></h3>
+        <h2 class="tittles space">Software Tools</h2>
+        <h3></h3>
+        <h2 class="tittles space">ping and traceroute</h2>
+        <h3></h3>
+        <h2 class="tittles space">ipconfig, ifconfig, and ip</h2>
+        <h3></h3>
+        <h2 class="tittles space">nslookup, dig, and hostname</h2>
+        <h3></h3>
+        <h2 class="tittles space">arp, route, nbtstat, netstat</h2>
+        <h3></h3>
+        <h2 class="tittles space">telnet, tcpdump, and nmap</h2>
+        <h3></h3>
+
+
+      
+
+    </div>
+
+      
+    <div class="example">
+       <h1 class="tittles space">Troubleshooting Network Issues</h1>
+
+       <h2 class="tittles space">Troubleshooting Network Issues</h2>
+       <h3>???</h3>
+
+      <h2 class="tittles space">Collisions and Broadcast Storms</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">Duplicate Addresses</h2>
+       <h3>???</h3>
+
+
+       <h2 class="tittles space">Routing Issues</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">Loops</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">DHCP Issues</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">IP and VLAN Settings</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">Firewall Issues</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">DNS and NTP Issues</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">Network Performance Issues</h2>
+       <h3>???</h3>
+
+        <h2 class="tittles space">Other Issues</h2>
+       <h3>???</h3>
+
+
+       
+      
+    </div>
+
+
+
+
+      <br><br>      
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+
+      
+
+<!-- 1.0 -->
+      
+    <div class="example">
+
+
+      
+      <br>
+      <br>
+      <h1>Everything Hosts do to speak on the Internet (part 1)</h1>
+      <br>
+      <br>
+      <h1>Hosts connected directly to each other (<i>same</i> network </h1>
+      <h3>Intro</h3>
+      <li>
+        <img src="img/exp.gif" alt="example" class="re-size">
+        <br>
+        <br> ? * Both host have NIC, and therefore a MAC <br>
+        <br> * Both hosts are configured with an IP address and a Subnet Mask <br> - Subnet Mask identifies the size of the IP network <br>
+      </li>
+      <h3>Host A has some Data to sen to Host B</h3>
+      <h3>Host A knows the IP address of Host B</h3>
+      <li> Aquire IP Address : <br>
+        <br> * Ping? <br>
+        <br> * Acquired from DNS? <br> - DNS Converts Domain Name into IP Address <br> example : <br>
+        <br>
+        <img src="img/exp7.png" alt="example" class="re-size">
+        <br>
+        <br> * Aquired IP Address is in the hosts IP Network
+      </li>
+      <h3>Host A can create the L3 header to attach to the Data</h3>
+      <li> Host A can create a <b>
+          <i>L3</i>
+        </b> header to attach to the Data. A <i>Layer 3</i> header is going to serve the function of end to end delivery. Therefore it will include a <b>source IP address</b> and a <b>desitnation IP address</b>. </li>
+      <h3>Host A does not know Host B's MAC address</h3>
+      <li>
+        <i>Layer 3</i> cannot interact with a wire for that the host needs a <b>Layer 2</b> header to the packet. <br>
+        <br> 'Host A' needs the <i> MAC address</i> of the destination but it doesn't know it. In order for 'Host A' to figure out the MAC address it's going to use a <i>protocol</i>. The protocol used is the <i>Address Resolution Protocol</i> ( <i>ARP</i>).
+      </li>
+      <h1 class="tittles space">Host A uses ARP to resolve targe's MAC Address</h1>
+      <h3>ARP Request asks for the MAC address associated w/ known IP</h3>
+      <li> To elaborate, the <i>ARP</i> asks for the <i>MAC address</i> with the target <i>IP</i>. The <i>ARP Request</i> also includes the sender's <i>MAC address</i>. <br>
+        <br> The ARP request is a <b>broadcast</b>, which means it's sent to everyone on the network. <b>Destination MAC address</b> is a MAC address of all <i>ffff.ffff.ffff</i>. The destination MAC address is a reserved MAC address meant to be used whenever you want to deliver a packet to everybody on the <i>LAN</i>.
+      </li>
+      <h1>Hosts coonected directly through a Router( <i>foreign</i> network </h1>
+    </div>
+    <div class="example">
+      <h1 class="tittles space">Network Protcols</h1>
+      <h3>Intro</h3>
+      <li> A <b>protocol</b> is a set of rules and messages that for an Internet standard. Examples of protocols include : <b>ARP</b>
+        <b>FTP</b>
+        <b>SMTP</b>
+        <b>HTTP</b>
+        <b>SSL</b>
+        <b>TLS</b>
+        <b>HTTPS</b>
+        <b>DNS</b>, & <b>DHCP</b>
+      </li>
+      <h3>DNS (Domain Name System)</h3>
+      <li>
+        <b>DNS</b> ( <b>Domain Name System</b>) is a protocol that exists which translates <i>domain names</i> into <i>IP address</i>. DNS will use a DNS <b>server</b> to do this.
+      </li>
+    </div>
+    <div class="example">
+      <h1 class="tittles space">TCP/IP Model</h1>
+      <h2 class="tittles space">Data Transfer Over Networks</h2>
+      <h3>Intro</h3>
+      <li> Data transfers over <i>network</i>, so when we transfer data over our networks we have to find a way to tell the data where it's going to go. Now we use <b>IP addresses</b> to get data to the right system. <br>
+        <br> The way we know what application is listening on that particular system is with a <b>port</b>. A port is a logical opening in a computer that represents a service or application that's listening and waiting for traffic. <br>
+        <br> Now, in computer networks, our ports are going to be numbered from <i>0 - 65,535</i>. Ports are broken up into two parts <i>well-known</i>/ <i>reserved ports</i> & <i>ephemeral ports</i>. <br>
+        <br>
+        <b>Well-known</b>/ <b>reserved ports</b> is numbered from <i>0 = 1023</i>. This includes FTP (port 80), HTTP (port 80), Simple Mail Transfer (port 25) [use other for encrption?], among other things. The <b>epherical ports</b> on the other hand includes ports from <i>1024 - 65,545</i>.
+      </li>
+      <h2 class="tittles space">Ports and Protocols</h2>
+      <h3>Intro</h3>
+      <li> There are 28 protocols and ports that you have to know. </li>
+      <h2 class="tittles space">IP Protocol Types</h2>
+      <h3>Intro/TCP</h3>
+      <li> Two common protocols we're going to use are <b>TCP</b> ( <b>Transmission Control Protocol</b>) which is a transport protocol that operates at layer four of the OSI model. TCP is used on top of internet protocol for the reliable transmission of packets. 
+        <br><br> 
+        Now TCP operates by conducting a <i>three-way handshake</i> between your client and your server and then that established the connection. Once established, the client and the server are going to continually renegotiate how much data can be sent and received through a process known as <b>windowing</b>.
+        As data is sent the recipient is going to verify to receive all the 
+        packets that were sent as excepcted by sending an acknowledgement 
+        each time. 
+        
+        <img src="img/exp?f" alt="example" class="re-size">
+
+        
+        
+      </li>
+      
+      <h3>UDP</h3>
+      <h3>Internet Control Message Protocol</h3>
+      <h3>GRE (Generic Routing Encapsulation)</h3>
+      <h3>Internet Protocol Security (IPSec</h3>
+      <h3>AH (Authentication Header)</h3>
+      <h3>ESP (Encapsulating Security Payload)</h3>
+    </div>
+
+
+      
+    
+      
