@@ -1,3 +1,4 @@
+
 <!-- @8.13.2023 12:35 PM -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -1571,14 +1572,14 @@
         <img src="img/exp2.gif" alt="example" class="re-size">
         <br><br>
 
-      1) <mark>Transporting bits</mark> ; Cables, Wifi, Repeaters, & Hubs
+      1) Physical ; <mark>Transporting bits</mark> ; Cables, Wifi, Repeaters, & Hubs
       <br>
-      2) <mark>Hop to hop</mark> ; NIC, MAC Address, Routers, Switch
+      2) Data Link ; <mark>Hop to hop</mark> ; NIC, MAC Address, Routers, Switch
       <br>
-      3) <mark>End to end</mark> ; IP Address 
+      3) Network ; <mark>End to end</mark> ; IP Address 
       <br>
-      4) <mark>Service to Service</mark> ; 
-         Two common address schemes to distinguish dates streams, which 
+      4) Transport ; <mark>Service to Service</mark> ; 
+         Two common address schemes to distinguish dates streams
          are <b>TCP</b> & <b>UDP</b> which are <b>ports</b>.
 
          <i>TCP</i> favors reliability. <i>UDP</i> favots efficiency.
@@ -1594,10 +1595,30 @@
         <br><br> 
 
         When a packet is initially send from a client it 
-        includes <b>Source desitination</b> (<b>SRC</b>) & <b>Destination</b> (<b>DST</b>)
+        includes a <b>Source</b> (<b>SRC</b>) & <b>Destination</b> (<b>DST</b>)
         
+          <br><br>
+          <img src="img/exp22.png" alt="example" class="re-size">
+          <br><br>
           
-          
+          ??This process occurs for each connection made the client 
+          the client. In each case the client is searching a new 
+          random source port. 
+
+          <br><br>
+
+          <i>Ports</i> ensure that the right application gets the 
+          right data. THis process also allows the client to make 
+          multiple connections to the sme server. 
+          (exp : when client/browser opens a new tab, a new random 
+          source port is created.)
+
+          <br><br> 
+
+          ?<b>Encapsulation</b>
+          <br><br>
+          ?The construct of a L2 header & its ensuing data is known
+          as a <b>frame</b>. 
           
     </li>
     
